@@ -35,7 +35,7 @@ const Registration = () => {
     e.preventDefault();
   
     try {
-      const response = await axios.post("http://localhost:8080/ecom/customers", form);
+      const response = await axios.post("myapp-1-0-28dv.onrender.com/ecom/customers", form);
       
       if (response.status === 200) {
         alert("Your registration was successful");
